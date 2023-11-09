@@ -1,3 +1,4 @@
+// eslint-disable-file no-use-before-define 
 import type { MouseEventHandler } from "react";
 import React from "react";
 import type { DerivedPropertiesMap } from "WidgetProvider/factory";
@@ -91,7 +92,7 @@ export class ContainerWidget extends BaseWidget<
 
   static getDefaults(): WidgetDefaultProps {
     return {
-      backgroundColor: "#FFFFFF",
+      backgroundColor: "#000000",
       rows: WidgetHeightLimits.MIN_CANVAS_HEIGHT_IN_ROWS,
       columns: 24,
       widgetName: "Container",

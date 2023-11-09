@@ -1,3 +1,4 @@
+// eslint-disable-file no-use-before-define 
 import React from "react";
 import { importSvg } from "design-system-old";
 import styled from "styled-components";
@@ -18,10 +19,11 @@ const Wrapper = styled.span`
 
 function BrandingBadge() {
   return (
-    <Wrapper className="flex items-center p-1 px-2 space-x-2 w-max backdrop-blur-xl backdrop-filter">
-      <Text renderAs="h4">Built on</Text>
-      <AppsmithLogo className="w-auto h-3" />
-    </Wrapper>
+    // <Wrapper className="">
+    //   <Text renderAs="h4">Built on</Text>
+    //   <AppsmithLogo className="w-auto h-3" />
+    // </Wrapper>
+    <></>
   );
 }
 

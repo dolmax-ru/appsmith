@@ -91,7 +91,8 @@ jobs:
           else
             base_tag=nightly
           fi
-          args+=(--build-arg "BASE=${{ vars.DOCKER_HUB_ORGANIZATION }}/base-${{ vars.EDITION }}:$base_tag")
+          args+=(--build-arg "BASE=appsmith/appsmith-ce:latest")
+      # ${{ vars.DOCKER_HUB_ORGANIZATION }}/base-${{ vars.EDITION }}:$base_tag")
           docker build -t cicontainer "${args[@]}" .
 
       # Saving the docker image to tar file
